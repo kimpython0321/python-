@@ -1,0 +1,158 @@
+# 시퀀스 자료형
+# 리스트, 튜플, 딕셔너리, set(집합)
+
+#리스트 - 대괄호
+#리스트 이름 = [대이터 값, 대이터 값, 대이터 값]
+
+# 리스트 생성
+# a = [] # 빈 리스트 생성
+# a = [1,2,3,4]
+# print(a, type(a))
+
+# 리스트 값 추가 - append
+# a = []
+#
+# a.append(8) # 값 추가 함수
+# print(a)
+
+# #리스트 값 수정
+# a = [3, 7, 9, 1]
+# a[2] = 4
+# print(a)
+
+#리스트 값 삭제
+# a = [6, 8, 0, 1, 7, 5, 2]
+# del a[4] # 리스트 값 삭제 함수
+# print(a)
+
+#튜플 - 소괄호
+
+#튜플 생성
+# a = () # 빈 튜플 생성
+# a = (1, 3, 5, 6)
+# a = 1,3,5,6,
+# a = (7,)
+# print(type(a))
+
+# 튜플은 값 추가, 값 수정, 값 삭제가 안된다.
+# 튜플 자체를 삭제하는 것은 가능하다.
+# a = ()
+# a = (3,4,5,6)
+# del a
+
+#튜플과 리스트의 값 접근 방법 - 인덱싱
+# a = [3, 8, 7]
+# b = (13, 16, 19)
+# print(a[2], b[1])
+
+#리스트 -> 튜플 tuple()
+# a = [2, 7, 8]
+# b = tuple(a)
+# print(a, type(a))
+# print(b, type(b))
+
+#튜플 -> 리스트 list()
+# a = (2, 7, 8)
+# b = list(a)
+# print(a, type(a))
+# print(b, type(b))
+
+
+#딕셔너리 - 중괄호
+# 딕셔너리 이름 = {key 값 : value 값, key 값 : value 값, key 값 : value 값}
+
+#딕셔너리 생성
+# a = {} # 빈 딕셔너리 생성
+# a = {"apple" : 17, "kiwi" : 41, "90" : 4}
+
+#딕셔너리 값 접근
+# a = {"apple" : 17, "kiwi" : 41, "90" : 4}
+# print(a["kiwi"])
+
+#딕셔너리 값 추가
+# a = {"apple" : 17, "kiwi" : 41, "90" : 4}
+#딕셔너리의 이름[새로운 key값] = value 값
+# a[7] = "hello"
+# print(a)
+
+#딕셔너리 값 수정
+# a = {"apple" : 17, "kiwi" : 41, "90" : 4}
+# # 딕셔너리의 이름[이미 존재하는 key값] = value 값
+# a["kiwi"] = "python"
+# print(a)
+
+#딕셔너리 값 삭제
+# a = {"apple" : 17, "kiwi" : 41, "90" : 4}
+# del a["apple"]
+# print(a)
+
+
+# 집합 - 중괄호
+
+#집합 생성
+# a = {1, 5, 8, 9}
+# print(a, type(a))
+
+#집합 값 추가
+# a = {1, 2, 3, 4}
+# a.add(7) # 하나의 값 추가
+# a.update([5,9]) # 여러개의 값 추가
+# print(a)
+
+# 집합 값 제거
+# a = {1, 2, 3, 4}
+# a.remove(3)
+# print(a)
+
+#집합은 중복을 제거하는 특징이 있다.
+# a = {5, 7, 7, 7, 1, 1, 1, 2, 3}
+# print(a)
+
+# 리스트 -> 집합 -> 리스트로 중복제거
+# a = [4, 2, 1, 3, 2, 2, 2, 1]
+# a = list(set(a))
+# print(a)
+
+# 외부 디렉토리안의 함수 사용하기
+
+# import
+# import random
+# a = random.randrange(1, 100)
+# print(a)
+
+# import random
+# r = []
+# k = 0
+#
+# a=0
+# b=0
+# c=0
+# d=0
+# e=0
+#
+# for i in range(1, 101):
+#     n = random.randrange(1, 6)
+#     r.append(n)
+#
+# while k != i:
+#     if r[k] == 1:
+#         a += 1
+#     if r[k] == 2:
+#         b += 1
+#     if r[k] == 3:
+#         c += 1
+#     if r[k] == 4:
+#         d += 1
+#     if r[k] == 5:
+#         e += 1
+#
+#     k += 1
+#
+# print("1 ", a, "번, ", "2 ", b, "번, ", "3 ", c, "번, ", "4 ", d, "번, ", "5 ", e, "번 ")
+
+# import random
+# count = [0, 0, 0, 0, 0]
+# for i in range(100):
+#     count[random.randrange(1, 6) - 1] += 1
+# 
+# print(count)
