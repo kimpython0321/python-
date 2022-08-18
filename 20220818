@@ -1,0 +1,38 @@
+# n = int(input("n -> "))
+# a = []
+# b = 0
+# j = 1
+#
+# while j/n <= 1:
+#     if n%j == 0:
+#         a.append(j)
+#         b += j
+#
+#     j += 1
+#
+# print("약수 : ", a)
+# print("약수 합", b)
+
+
+# a = int(input("처음 수 : "))
+# b = int(input("끝 수 : "))
+# if b > a:
+#     c = 0
+#     i = a
+#
+#     while i <= b:
+#         d = 0
+#         k = 1
+#         while k <= i:
+#             if i%k == 0:
+#                 d += 1
+#             k += 1
+#         if d%2 == 0:
+#             c += i
+#         else:
+#             c -= i
+#
+#         i += 1
+#
+#
+# print(c)
