@@ -1,0 +1,88 @@
+#시퀀스 자료형 길이를 알려주는 함수 len()
+# a = [2, 4, 7, 8]
+# print(len(a))
+
+# n = [0,1,2,3,4,5,6,7,8,9]
+# numbers = [0,1,3,4,6,7,5]
+# k = 0
+# l = 0
+# a = 0
+# b = 0
+#
+# for i in range(len(numbers)):
+#     k += numbers[a]
+#     a += 1
+#
+# for i in range(len(n)):
+#     l += n[b]
+#     b += 1
+#
+# print(l - k)
+
+# 오류
+# n = [0,1,2,3,4,5,6,7,8,9]
+# numbers = [0,1,2,3,4,5,6,7]
+# a = 0
+# b = 0
+# result = 0
+#
+# while a != len(n):
+#     if n[a] != numbers[b]:
+#         result += n[a]
+#         a += 1
+#     else:
+#         a += 1
+#         b += 1
+# print(result)
+
+
+# numbers = [1,2,3,4,6,7,8,0]
+# a = 0
+# result = 0
+# for i in range(10):
+#     if i != numbers[a]:
+#         result += i
+#     else:
+#         a += 1
+#
+# print(result)
+
+
+#리스트를 이용하여 for 반복문 실행하기
+# lst = [1, 3, 5, 6, 9]
+# for i in lst:
+#     print(i)
+
+#리스트를 이용하여 if 조건문 실행하기
+# lst = [4, 9, 2]
+# if 4 in lst:
+#     print("T")
+# else:
+#     print("F")
+
+# n = [0,1,2,3,4,5,6,7,8,9]
+# numbers = [1,2,3,4,6,7,8,0]
+# result = 0
+# for lit_ind in n:
+#     if not(lit_ind in numbers):
+#         result += lit_ind
+#
+# print(result)
+
+
+# n = int(input("n = "))
+# n_copy = n
+# all_sum = 0
+# while n_copy != 0:
+#     one = n_copy%10
+#     all_sum += one
+#     n_copy = n_copy // 10
+# if n%all_sum == 0:
+#     print("하샤드 수입니다.")
+# else:
+#     print("하샤드 수가 아닙니다.")
+
+
+#아스키 코두 문자 변환 chr() ord()
+# print(chr(97))
+# print(ord("A"))
