@@ -1,0 +1,53 @@
+# B = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# S = "abcdefghijklmnopqrstuvwxyz"
+#
+# s = input("문자열을 입력하세요.")
+# n = int(input("거리를 입력하세요."))
+# i = 0
+
+
+# s = input("문자열을 입력하세요.(영어)")
+# n = int(input("거리를 입력해주세요."))
+# k = 0
+# s_ascllcode = []
+# new_s = []
+#
+# if s.isupper():
+#     c = 90
+# if s.islower():
+#     c = 122
+#
+# for i in s:
+#     s_ascllcode.append(i)
+#
+# for i in range(len(s_ascllcode)):
+#     if ord(s_ascllcode[k])+ n <= c:
+#         new_s.append(chr(ord(s_ascllcode[k]) + n))
+#     else:
+#         a = ((ord(s_ascllcode[k]) + n) - c) - 1
+#         new_s.append((chr(a)))
+#
+# print_s = new_s[0]
+# k = 1
+#
+# for i in range(len(new_s) - 1):
+#     print_s += new_s[k]
+#
+# print(print_s)
+#
+# print(a)
+
+
+# s = input("문자열 입력: ")
+# n = int(input("정수값 입력: "))
+# result = ""
+# 
+# for i in s:
+#     if i.isupper():
+#         result += chr((ord(i) - ord('A') + n) % 26 + ord('A'))
+#     elif i.islower():
+#         result += chr((ord(i) - ord('a') + n) % 26 + ord('a'))
+#     else:
+#         result += ""
+# 
+# print(result)
